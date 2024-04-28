@@ -1,0 +1,144 @@
+@media (width < 900px) {
+    nav .checkbox {
+      display: block;
+    }
+  
+    ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 85px);
+      left: -100%;
+      top: 85px;
+      background-color: #ffffff;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
+  
+    nav #check:checked ~ ul {
+      left: 0;
+    }
+  
+    ul li a {
+      font-size: 1.25rem;
+    }
+
+    .header-line {
+      display: none;
+    }
+
+    .home-left-section{
+      grid-row-start: 1;
+    }
+
+    .home-left-section img {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+    }
+
+    .home-right-section{
+      grid-row-start: 2;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .home-title h1{
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .contact-button{
+      margin-top: 16px;
+    }
+
+    .about-container{
+      width: 100%;
+      left: 34px;
+    }
+
+    .about-left-section {
+      grid-row-start: 1;
+    }
+    .about-right-section{
+      grid-row-start: 2;
+    }
+
+    .about-img-section img {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+    }
+
+    .skills-container{
+      grid-template-columns: repeat(1, 1fr);
+      padding: 2rem 50px;
+      z-index: 0;
+    }
+    
+    .contact-form-container .fill-txt {
+      position: relative;
+      left: -35px;
+    }
+    
+  }
+
+  @media (width < 1100px) {
+    .home-title {
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    .about-txt {
+      text-align: center;
+    }
+
+    .about-right-section {
+      grid-row-start: 2;
+    }
+    
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      left: 34px;
+      margin-right: 3rem;
+    }
+  
+    .about-me-details {
+      grid-row-start: 2;
+      width: 50%;
+    }
+
+    .logo{
+      display: none;
+    }
+
+    .contact-card {
+      width: 230px;
+      height: 90px;
+    }
+
+    .contact-card h4 {
+      font-size: 13px;
+    }
+
+    .contacts-container {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 0;
+    }
+
+    .contact-form-container .fill-txt {
+      margin-left: 360px;
+    }
+    
+    .contact-details,
+    .contact-form-container {
+        width: 100%; 
+        margin: 0 0 20px; 
+    }
+  }
+  
+  
